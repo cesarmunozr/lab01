@@ -3,10 +3,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
+
+
+
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        String[] path = {
+        String[] path = { 
                 "C:\\Users\\river\\Desktop\\mexico\\csv\\mx-amazon-devices.csv",    "C:\\Users\\river\\Desktop\\mexico\\csv\\mx-automotive.csv",
                 "C:\\Users\\river\\Desktop\\mexico\\csv\\mx-baby.csv",              "C:\\Users\\river\\Desktop\\mexico\\csv\\mx-books.csv",
                 "C:\\Users\\river\\Desktop\\mexico\\csv\\mx-digital-text.csv",      "C:\\Users\\river\\Desktop\\mexico\\csv\\mx-dvd.csv",
@@ -79,7 +82,7 @@ public class Main {
 
         for(String tmp : queue){
             bw.write(tmp);
-            System.out.println(tmp);
+            //System.out.println(tmp);
         }
 
         bw.close();
@@ -87,7 +90,7 @@ public class Main {
 
         for(String tmp : stack){
             bw.write(tmp);
-            System.out.println(tmp);
+            //System.out.println(tmp);
         }
         bw.close();
     }
